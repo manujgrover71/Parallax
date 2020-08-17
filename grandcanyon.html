@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>
+        Grand Canyon
+    </title>
+    
+    <link href="/css/index2.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="zoom">
+        <img src="/assets/images/Grand1.jpg" id="layer1">
+        <img src="/assets/images/Grand2.jpg" id="layer2">
+        <img src="/assets/images/text.png" id="text">
+    </section>
+    <section class="content">
+        <h2>Grand Canyon</h2>
+        <p>The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States. The Grand Canyon is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). <br><br>
+
+            The canyon and adjacent rim are contained within Grand Canyon National Park, the Kaibab National Forest, Grand Canyon–Parashant National Monument, the Hualapai Indian Reservation, the Havasupai Indian Reservation and the Navajo Nation. President Theodore Roosevelt was a major proponent of preservation of the Grand Canyon area and visited it on numerous occasions to hunt and enjoy the scenery. <br><br>
+            
+            Nearly two billion years of Earth's geological history have been exposed as the Colorado River and its tributaries cut their channels through layer after layer of rock while the Colorado Plateau was uplifted. While some aspects about the history of incision of the canyon are debated by geologists, several recent studies support the hypothesis that the Colorado River established its course through the area about 5 to 6 million years ago. Since that time, the Colorado River has driven the down-cutting of the tributaries and retreat of the cliffs, simultaneously deepening and widening the canyon.<br> <br>
+            
+            For thousands of years, the area has been continuously inhabited by Native Americans, who built settlements within the canyon and its many caves. The Pueblo people considered the Grand Canyon a holy site, and made pilgrimages to it. The first European known to have viewed the Grand Canyon was García López de Cárdenas from Spain, who arrived in 1540. <br><br>
+            <br><br></p>
+    </section>
+
+    <script>
+        var layer1 = document.getElementById('layer1');
+        scroll = window.pageYOffset;
+
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/3) + '%';
+        });
+
+        var layer2 = document.getElementById('layer2');
+        scroll = window.pageYOffset;
+
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (120 + scroll/20) + '%';
+            layer2.style.left = (scroll/10) + '%';
+        });
+
+        var text = document.getElementById('text');
+        scroll = window.pageYOffset;
+
+        document.addEventListener('scroll', function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            // layer2.style.width = (100 + scroll/5) + '%';
+            text.style.top = -scroll/5 + '%';
+        });
+
+        </script>
+</body>
+
+</html>

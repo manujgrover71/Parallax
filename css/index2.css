@@ -61,3 +61,12 @@ body {
 .content p {
     font-size: 1.2em;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D27357;
+    border-radius: 6px;
+  }

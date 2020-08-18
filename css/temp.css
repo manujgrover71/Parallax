@@ -1,0 +1,60 @@
+body{
+    background-image: url(https://cdn.britannica.com/54/155954-050-58DC3BA5/massif-Mount-Everest-Himalayas-Nepal.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    height: 100%;
+  
+  }
+  h1{
+    text-align: center;
+    font-family: georgia;
+    font-size: 90px;
+    color:#abf0e9;
+  }
+  p{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Alata;
+  }
+  span:hover{
+    text-decoration: underline;
+  }
+  .pp{
+    font-size: 20px;
+    font-family: Alata;
+  }
+  .main{
+    margin:auto 15%;
+    height: 145%;
+    background-attachment: fixed;
+    position: relative;
+    background-color: white;
+  }
+  .page{
+    margin:10px;
+    size:100%;
+    background-attachment: fixed;
+    background-color: white;
+    height: 100%;
+    position: relative;
+  }
+  img{
+    margin-left: 40px;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover{
+    color: red;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    border-radius: 6px;
+  }

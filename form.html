@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body{
+                background-color: black;
+                background-image: url(assets/images/black-abstract-12.jpg);
+            }
+            table{
+                border-collapse: separate;
+                border-spacing: 0 15px;
+            }
+            button{
+                width: 100%;
+                height: 30px;
+                border-radius: 8px;
+                border-color: white;
+                border-width: 2px;
+                background-color: transparent;
+                color: white;
+            }
+            td{
+                font-size: 20px;
+            }
+            #a{
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <form action="#" style="width: fit-content; color: whitesmoke;">
+                <p id="a" style="text-align: left;"><b>Contact form</b></p>
+                <p id="b" style="text-align: left;"><b>Please fill in your information</b><br/><br/></p>
+                <table>
+                    <tr>
+                        <td>Your Name</td>
+                        <td><input type="text" placeholder="First name" name="First Name" required size="22"> <input type="text" placeholder="Last name" name="Last Name" required size="21"></td>
+                    </tr>
+                    <tr>
+                        <td>Your Email</td>
+                        <td><input type="email" placeholder="eg hello@contact.net" name="email" size="49" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="tel" placeholder="###" name="phone1" size="12"> <input type="tel" placeholder="###" name="phone2" size="12"> <input type="tel" placeholder="###" name="phone3" size="12"></td>
+                    </tr>
+                    <tr>
+                        <td>Message Subject* </td>
+                        <td><input type="text" placeholder="Message Subject" name="subject" size="49" required></td>
+                    </tr>
+                    <tr>
+                        <td>Message*</td>
+                        <td>
+                            <textarea rows="4" cols="46" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
+</html>

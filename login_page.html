@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <style>
+            .a{
+                background-image: url(assets/images/250320_jezioro_gory.jpg);
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+                width: inherit;
+                
+            }
+            #c{
+                border-spacing: 10px;
+                width: 20%;
+                height: 500px;
+                border: thin solid;
+                border-color: white;
+                margin: auto;
+                color: white;
+                /* backdrop-filter: blur(40px); */
+                box-shadow: 10px 10px 10px black;
+                background-blend-mode: darken;
+            }
+            #b{
+                width: 100%;
+                height: inherit;
+                border: 2px solid white;
+                backdrop-filter: blur(15px);
+            }
+            p{
+                font-size: 25px;
+            }
+            input{
+                background-color: transparent;
+                border:thin solid white;
+                border-radius: 5px;
+                height: 25px;
+            }
+            ::placeholder{
+                color: white;
+            }
+            #b1, #b2{
+                width: 100px;
+                background-color: transparent;
+                border: thin solid white;
+                color: white;
+                border-radius: 5px;
+            }
+            #bform1{
+                border-collapse: collapse;
+                width: 200px;
+                height: 30px;
+                background-color: rgb(0, 204, 255);
+                border: none;
+                outline: none;
+            }
+            #form2{
+                visibility: hidden;
+            }
+        </style>
+        <script>
+            function check_pass(){
+                var a = document.getElementById("pass").value;
+                var b = document.getElementById("con_pass").value;
+                if (a!=b)
+                {
+                    alert("password should be same");
+                    document.getElementById("pass").value="";
+                    document.getElementById("con_pass").value="";
+                } 
+            }
+            function change_visibility(a, b)
+            {
+                document.getElementById(a).style.visibility="visible";
+                document.getElementById(a).style.display="block";
+                document.getElementById(b).style.visibility="hidden";
+                document.getElementById(b).style.display="none";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="a">
+            <div id="b">
+                <br/>
+                <div id="c">
+                    <center>
+                        <p>Hi Travellers</p>
+                        <button id="b1" onclick="change_visibility('form1', 'form2');">Login</button>
+                        <button id="b2" onclick="change_visibility('form2', 'form1');">Register</button>
+                    </center>
+                    <form action="#" id="form1">
+                        <br/>
+                        <center>
+                            <input placeholder="Username or email" type="text" name="Username or email" size="25" required><br/><br/>
+                            <input placeholder="Password" type="password" name="password" size="25" required><br/><br/>
+                            <input id="check" name="remember" type="checkbox"> <label for="check" style="font-size: small;">Remember me</label><br/><br/>
+                            <button id="bform1">Login</button>
+                        </center>
+                    </form>
+                    <form action="www.google.com" id="form2">
+                        <br/>
+                        <center>
+                            <input placeholder="Username" type="text" name="Username" size="25" required><br/><br/>
+                            <input placeholder="Email" type="email" name="email" size="25" required><br/><br/>
+                            <input placeholder="Password" type="password" name="password" size="25" id="pass" required><br/><br/>
+                            <input placeholder="Confirm Password" type="password" size="25" required id="con_pass" onblur="check_pass();"><br/><br/>
+                            <input id="check" name="remember" type="checkbox"> <label for="check" style="font-size: small;">Remember me</label><br/><br/>
+                            <button id="bform1">Register</button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
